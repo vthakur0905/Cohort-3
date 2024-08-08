@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: "Open Sans", sans-serif;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute; /* Ensure that child elements are positioned relative to this container */
+}
+
+.content {
+    height: 75%;
+    width: 100%;
+    /* background-color: aquamarine; */
+    margin-top: 80px;
+    position: relative; /* Change to relative to keep normal document flow */
+    display: flex;
+}
+
+.logo {
+    /* background-color: antiquewhite; */
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    height: 330px;
+    width: auto;
+    padding-left: 40px;
+}
+
+.headings {
+    /* background-color: blueviolet; */
+}
+
+.write {
+    height: 100px;
+    width: 45vw;
+    /* background-color: brown; */
+}
+
+.write img {
+    width: 100%;
+    height: 100px;
+}
+
+.join h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /* background: #dcd5d5; */
+    font-weight: 900;
+    margin-left: 8px;
+    width: 200px;
+    color: white;
+}
+
+.button_google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-left: 8px;
+    height: 40px;
+    width: 300px;
+    background-color: rgb(251, 251, 251);
+}
+
+.button_google img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.button_google h2 {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.button_signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-left: 8px;
+    height: 40px;
+    width: 300px;
+    background-color: #5fa1fc;
+}
+
+.button_signup h2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.headings h5 {
+    font-size: 12px;
+    margin-left: 8px;
+    margin-top: 8px;
+    width: 350px;
+    font-weight: 450;
+    color: rgb(61, 60, 60);
+    margin-bottom: 20px;
+}
+
+.headings h5 a {
+    text-decoration: none;
+}
+
+.already {
+    /* background-color: burlywood; */
+    height: 25px;
+    width: 350px;
+    margin-left: 8px;
+}
+
+.already h2 {
+    font-size: 18px;
+    font-weight: 750;
+}
+
+.signin {
+    margin-top: 20px;
+    margin-left: 8px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    background-color: black;
+    height: 40px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signin h2 {
+    color: #5fa1fc;
+    font-size: 16px;
+}
+
+.footer {
+    /* background: #cee865; */
+    width: 1450px;
+    height: 85px;
+    position: relative;
+    padding-top: 25px;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-left: 5px;
+    bottom: 0; /* Position the footer at the bottom of the main container */
+}
+
+.footer a{
+    margin-left: 5px;
+    font-size: 13px;
+    text-decoration: none;
+    color: gray;
+    font-weight: 300;
+}
+
+
