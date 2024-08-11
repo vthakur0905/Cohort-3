@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereum Wallet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+            text-align: center;
+        }
+        input {
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+        }
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        #balance {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Check Ethereum Balance</h1>
+    <input type="text" id="publicKey" placeholder="Enter Ethereum Address">
+    <button onclick="checkBalance()">Check Balance</button>
+    <div id="balance"></div>
+
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" type="application/javascript"></script>
+    <script>
+        async function checkBalance() {
+            const publicKey = document.getElementById('publicKey').value;
+
+            if (!ethers.utils.isAddress(publicKey)) {
+                document.getElementById('balance').innerText = 'Invalid Ethereum Address';
+                return;
+            }
+
+            const provider = new ethers.providers.InfuraProvider('mainnet', '48919d569bf74f0cbae640ec3fc764ba');
+            const balance = await provider.getBalance(publicKey);
+            const etherString = ethers.utils.formatEther(balance);
+
+            document.getElementById('balance').innerText = `Balance: ${etherString} ETH`;
+        }
+    </script>
+</body>
+</html>
