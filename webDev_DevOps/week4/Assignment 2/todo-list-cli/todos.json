@@ -1,0 +1,14 @@
+[
+  {
+    "task": "take cohort 3 live class",
+    "done": true
+  },
+  {
+    "task": "complete the node js assignment",
+    "done": false
+  },
+  {
+    "task": "go to gym",
+    "done": false
+  }
+]
